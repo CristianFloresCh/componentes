@@ -1,9 +1,23 @@
-<ion-header>
-  <ion-toolbar>
-    <app-header titulo="Alert"></app-header>
-  </ion-toolbar>
-</ion-header>
+
+<app-header titulo="Alert"></app-header>
 
 <ion-content>
-
+  <ion-button (click)="presentAlert()" expand="block">
+    Mostrar Alerta 1
+  </ion-button>
+  <ion-button (click)="presentAlertCheckbox()" expand="block">
+    Mostrar Alerta Check
+  </ion-button>
+  <ion-button (click)="presentAlertConfirm()" expand="block">
+    Mostrar Alerta Confirm
+  </ion-button>
+  <ion-button (click)="presentAlertMultipleButtons()" expand="block">
+    Mostrar Alerta Multiple
+  </ion-button>
+  <ion-button (click)="presentAlertPrompt()" expand="block">
+    Mostrar Alerta Promp
+  </ion-button>
+  <ion-button (click)="presentAlertRadio()" expand="block">
+    Mostrar Alerta Radio
+  </ion-button>
 </ion-content>
