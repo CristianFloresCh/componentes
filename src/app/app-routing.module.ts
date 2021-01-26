@@ -42,6 +42,18 @@ const routes: Routes = [
     path: 'cards',
     loadChildren: () => import('./paginas/cards/cards.module').then( m => m.CardsPageModule)
   },
+  {
+    path: 'slides',
+    loadChildren: () => import('./paginas/slides/slides.module').then( m => m.SlidesPageModule)
+  },
+  {
+    path: 'check',
+    loadChildren: () => import('./paginas/check/check.module').then( m => m.CheckPageModule)
+  },
+  {
+    path: 'grid',
+    loadChildren: () => import('./paginas/grid/grid.module').then( m => m.GridPageModule)
+  },
 
 ];
 

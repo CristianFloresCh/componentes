@@ -48,6 +48,21 @@ export class InicioPage implements OnInit {
       icon: "card-outline",
       nombre: "Cards",
       direccion: "/cards",
+    },
+    {
+      icon: "albums-outline",
+      nombre: "Slides",
+      direccion: "/slides",
+    },
+    {
+      icon: "checkbox-outline",
+      nombre: "Check",
+      direccion: "/check",
+    },
+    {
+      icon: "grid-outline",
+      nombre: "Grid",
+      direccion: "/grid",
     }
   ];
   constructor() { }
