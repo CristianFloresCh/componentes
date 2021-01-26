@@ -1,0 +1,17 @@
+<app-header titulo="check"></app-header>
+
+<ion-content>
+  asdasd
+  <ion-item mode="md" *ngFor="let item of datos">
+    <ion-label>{{item.nombre}}</ion-label>
+    <ion-checkbox slot="start" [color]="item.nombre" [checked]="item.selector">
+
+    </ion-checkbox>
+  </ion-item>
+  <ion-item mode="md" *ngFor="let item of datosb">
+    <ion-label>{{item.nombre}}</ion-label>
+    <ion-checkbox slot="start" [color]="item.nombre" [(ngModel)]="item.selector">
+
+    </ion-checkbox>
+  </ion-item>
+</ion-content>
