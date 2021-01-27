@@ -54,6 +54,14 @@ const routes: Routes = [
     path: 'grid',
     loadChildren: () => import('./paginas/grid/grid.module').then( m => m.GridPageModule)
   },
+  {
+    path: 'popover',
+    loadChildren: () => import('./paginas/popover/popover.module').then( m => m.PopoverPageModule)
+  },
+  {
+    path: 'toast',
+    loadChildren: () => import('./paginas/toast/toast.module').then( m => m.ToastPageModule)
+  },
 
 ];
 

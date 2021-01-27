@@ -63,6 +63,16 @@ export class InicioPage implements OnInit {
       icon: "grid-outline",
       nombre: "Grid",
       direccion: "/grid",
+    },
+    {
+      icon: "list-outline",
+      nombre: "Popover",
+      direccion: "/popover",
+    },
+    {
+      icon: "chatbox-outline",
+      nombre: "Toast",
+      direccion: "/toast",
     }
   ];
   constructor() { }
