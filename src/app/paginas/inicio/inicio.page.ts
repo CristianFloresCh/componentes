@@ -73,6 +73,16 @@ export class InicioPage implements OnInit {
       icon: "chatbox-outline",
       nombre: "Toast",
       direccion: "/toast",
+    },
+    {
+      icon: "arrow-redo-outline",
+      nombre: "Input",
+      direccion: "/input",
+    },
+    {
+      icon: "infinite-outline",
+      nombre: "Infinite Scroll",
+      direccion: "/scroll",
     }
   ];
   constructor() { }

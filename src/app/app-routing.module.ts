@@ -62,6 +62,14 @@ const routes: Routes = [
     path: 'toast',
     loadChildren: () => import('./paginas/toast/toast.module').then( m => m.ToastPageModule)
   },
+  {
+    path: 'input',
+    loadChildren: () => import('./paginas/input/input.module').then( m => m.InputPageModule)
+  },
+  {
+    path: 'scroll',
+    loadChildren: () => import('./paginas/scroll/scroll.module').then( m => m.ScrollPageModule)
+  },
 
 ];
 
