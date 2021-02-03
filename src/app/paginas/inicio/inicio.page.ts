@@ -1,10 +1,9 @@
+import { DataService } from './../../service/data.service';
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Componente } from 'src/app/interfaces/interfaces';
+import { MenuController } from '@ionic/angular';
 
-interface Componente{
-    icon,
-    nombre,
-    direccion
-} 
 
 @Component({
   selector: 'app-inicio',
@@ -13,81 +12,13 @@ interface Componente{
 })
 export class InicioPage implements OnInit {
 
-  componente:Componente[]=[
-    {
-      icon: "person",
-      nombre: "Action Sheet",
-      direccion: "/action-sheet",
-    },
-    {
-      icon: "pricetag-outline",
-      nombre: "Alert",
-      direccion: "/alert",
-    },
-    {
-      icon: "planet",
-      nombre: "fab",
-      direccion: "/fab",
-    },
-    {
-      icon: "rocket",
-      nombre: "Date Time",
-      direccion: "/datetime",
-    },
-    {
-      icon: "albums",
-      nombre: "Buttons",
-      direccion: "/buttons",
-    },
-    {
-      icon: "accessibility-outline",
-      nombre: "Avatar",
-      direccion: "/avatar",
-    },
-    {
-      icon: "card-outline",
-      nombre: "Cards",
-      direccion: "/cards",
-    },
-    {
-      icon: "albums-outline",
-      nombre: "Slides",
-      direccion: "/slides",
-    },
-    {
-      icon: "checkbox-outline",
-      nombre: "Check",
-      direccion: "/check",
-    },
-    {
-      icon: "grid-outline",
-      nombre: "Grid",
-      direccion: "/grid",
-    },
-    {
-      icon: "list-outline",
-      nombre: "Popover",
-      direccion: "/popover",
-    },
-    {
-      icon: "chatbox-outline",
-      nombre: "Toast",
-      direccion: "/toast",
-    },
-    {
-      icon: "arrow-redo-outline",
-      nombre: "Input",
-      direccion: "/input",
-    },
-    {
-      icon: "infinite-outline",
-      nombre: "Infinite Scroll",
-      direccion: "/scroll",
-    }
-  ];
-  constructor() { }
+  componente:Observable<Componente[]>;
+  constructor(private dataService:DataService, private menuController:MenuController) { }
 
   ngOnInit() {
+    this.componente=this.dataService.getMenu();
   }
-
+  onClick(){
+    this.menuController.open();
+  }
 }

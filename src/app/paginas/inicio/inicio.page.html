@@ -1,6 +1,11 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>inicio</ion-title>
+    <ion-buttons slot="start">
+      <ion-button (click)="onClick()">
+        <ion-icon slot="start" name="menu"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
@@ -13,8 +18,8 @@
     Alert
   </ion-button>
   <ion-list>
-    <ion-item *ngFor="let item of componente" [routerLink]="item.direccion">
-      <ion-icon slot="start" [name]="item.icon"></ion-icon>
+    <ion-item *ngFor="let item of componente | async" [routerLink]="item.direccion">
+      <ion-icon slot="start" [name]="item.icono"></ion-icon>
       <ion-text>{{item.nombre}}</ion-text>
     </ion-item>
   </ion-list>

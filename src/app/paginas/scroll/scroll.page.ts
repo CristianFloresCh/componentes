@@ -13,4 +13,5 @@ export class ScrollPage implements OnInit {
   ngOnInit() {
   }
 
+  loadData(){}
 }

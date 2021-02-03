@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" text="Atras"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-uppercase">Reorder</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="reorderDisable=!reorderDisable">
+        Toggle
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-list>
+  <ion-reorder-group [disabled]="reorderDisable"
+  (ionItemReorder)="doReorder($event)">
+    <ion-item *ngFor="let usuario of usuarios">
+      <ion-label>{{usuario}}</ion-label>
+      <ion-reorder slot="end"></ion-reorder>
+    </ion-item>
+  </ion-reorder-group>
+</ion-list>
+</ion-content>

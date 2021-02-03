@@ -1,0 +1,82 @@
+[
+    {
+      "icono": "person",
+      "nombre": "Action Sheet",
+      "direccion": "/action-sheet"
+    },
+    {
+      "icono": "pricetag-outline",
+      "nombre": "Alert",
+      "direccion": "/alert"
+    },
+    {
+      "icono": "planet",
+      "nombre": "fab",
+      "direccion": "/fab"
+    },
+    {
+      "icono": "rocket",
+      "nombre": "Date Time",
+      "direccion": "/datetime"
+    },
+    {
+      "icono": "albums",
+      "nombre": "Buttons",
+      "direccion": "/buttons"
+    },
+    {
+      "icono": "accessibility-outline",
+      "nombre": "Avatar",
+      "direccion": "/avatar"
+    },
+    {
+      "icono": "card-outline",
+      "nombre": "Cards",
+      "direccion": "/cards"
+    },
+    {
+      "icono": "albums-outline",
+      "nombre": "Slides",
+      "direccion": "/slides"
+    },
+    {
+      "icono": "checkbox-outline",
+      "nombre": "Check",
+      "direccion": "/check"
+    },
+    {
+      "icono": "grid-outline",
+      "nombre": "Grid",
+      "direccion": "/grid"
+    },
+    {
+      "icono": "list-outline",
+      "nombre": "Popover",
+      "direccion": "/popover"
+    },
+    {
+      "icono": "chatbox-outline",
+      "nombre": "Toast",
+      "direccion": "/toast"
+    },
+    {
+      "icono": "arrow-redo-outline",
+      "nombre": "Input",
+      "direccion": "/input"
+    },
+    {
+      "icono": "infinite-outline",
+      "nombre": "Infinite Scroll",
+      "direccion": "/scroll"
+    },
+    {
+      "icono": "heart-outline",
+      "nombre": "Listas",
+      "direccion": "/listas"
+    },
+    {
+      "icono": "trash-outline",
+      "nombre": "Listas Reordenadas",
+      "direccion": "/list-reorder"
+    }
+  ]
