@@ -83,6 +83,10 @@ const routes: Routes = [
     path: 'modal',
     loadChildren: () => import('./paginas/modal/modal.module').then( m => m.ModalPageModule)
   },
+  {
+    path: 'pover',
+    loadChildren: () => import('./paginas/pover/pover.module').then( m => m.PoverPageModule)
+  },
   /*{
     path: 'modalinfo',
     loadChildren: () => import('./paginas/modalinfo/modalinfo.module').then( m => m.ModalinfoPageModule)

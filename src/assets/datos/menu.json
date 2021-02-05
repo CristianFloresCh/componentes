@@ -78,5 +78,15 @@
       "icono": "trash-outline",
       "nombre": "Listas Reordenadas",
       "direccion": "/list-reorder"
+    },
+    {
+      "icono": "person-outline",
+      "nombre": "Modal",
+      "direccion": "/modal"
+    },
+    {
+      "icono": "baseball-outline",
+      "nombre": "Pover",
+      "direccion": "/pover"
     }
   ]

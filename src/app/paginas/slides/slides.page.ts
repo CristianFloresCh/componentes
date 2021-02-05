@@ -1,5 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
+interface Slider{
+  title:string;
+  description:string;
+  image:string;
+}
+
 @Component({
   selector: 'app-slides',
   templateUrl: './slides.page.html',
