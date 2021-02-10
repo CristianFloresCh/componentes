@@ -87,6 +87,14 @@ const routes: Routes = [
     path: 'pover',
     loadChildren: () => import('./paginas/pover/pover.module').then( m => m.PoverPageModule)
   },
+  {
+    path: 'search',
+    loadChildren: () => import('./paginas/search/search.module').then( m => m.SearchPageModule)
+  },
+  {
+    path: 'tabs',
+    loadChildren: () => import('./paginas/tabs/tabs.module').then( m => m.TabsPageModule)
+  },
   /*{
     path: 'modalinfo',
     loadChildren: () => import('./paginas/modalinfo/modalinfo.module').then( m => m.ModalinfoPageModule)

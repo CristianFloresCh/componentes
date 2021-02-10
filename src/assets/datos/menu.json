@@ -88,5 +88,15 @@
       "icono": "baseball-outline",
       "nombre": "Pover",
       "direccion": "/pover"
+    },
+    {
+      "icono": "search-outline",
+      "nombre": "SearchBar",
+      "direccion": "/search"
+    },
+    {
+      "icono": "search-outline",
+      "nombre": "Tabs",
+      "direccion": "/tabs"
     }
   ]
